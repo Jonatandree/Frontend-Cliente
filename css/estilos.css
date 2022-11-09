@@ -1,0 +1,177 @@
+.nav1{
+height: auto;
+background-color: #FF6543 !important;
+color: #fff;
+}
+.img-hyper{
+    width: 46px;
+    height: 46px;
+    border-radius: 165px;
+}
+
+.texto1{
+   position: absolute; 
+width: 315px;
+height: 290px;
+left: 30px;
+top: 150px;
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 76px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+.texto2{
+    position: absolute;
+    width: 269px;
+    height: 74px;
+    left: 60px;
+    top: 475px;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    mix-blend-mode: lighten;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.boton{
+    position: absolute;
+width: 160px;
+height: 59px;
+left: 114px;
+top: 550px;
+color: #fff;
+background: #D74B1F;
+border-radius: 25px;
+}
+.boton :focus{
+    position: absolute;
+    width: 160px;
+    height: 59px;
+    left: 114px;
+    top: 550px;
+    color: #fff;
+    background: #78b0f0;
+    border-radius: 25px;
+}
+.traspaso{
+    background-color: #D74B1F ;
+    height: 4rem;
+}
+/* Estilos de landing page ^ */
+#fondo{
+    background-color:#EBEAEF ;
+}
+.texto-categorias{
+    text-align: center;
+    color: #1378EC;
+    margin: 2rem;
+}
+.categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 8rem;
+    border-radius: 25px;
+    margin: 1rem;
+
+}
+
+.texto-categorias2{
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Estilos de categorias ^ */
+#categoria{
+    text-align: center;
+    color: #1378EC;
+    margin: 2rem;
+}
+.texto-empresas{
+    margin-top: 5px;
+    background: white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    height: 66px;
+    padding: 6px;
+
+}
+.estrellas{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos de empresas ^ */
+
+.banner{
+    margin: 15px;
+}
+.nombre{
+    text-align: center;
+    color: #1378EC;
+    font-size: 20px;
+}
+.informacion{
+    margin: 3px ;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/*Estilos de articulos ^ */
+
+#articulo{
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.img-articulo{
+    margin: inherit;
+    padding: 2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+}
+.informacion2{
+    background-color: #fff;
+    height: 10rem;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 4px 4px rgba(13, 48, 232, 0.25);
+border-radius: 25px;
+margin:3px;
+padding: 1rem;
+}
+.boton-agregar{
+    color: #fff;
+background: #D74B1F;
+border-radius: 25px;
+}
+.sumador{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;
+padding: 1rem;
+}
+.boton-sumar{
+    
+    color: #fff;
+    background: #D74B1F;
+    border-radius: 25px;
+}
