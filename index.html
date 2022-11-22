@@ -7,26 +7,564 @@
     <title>Alero Index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://kit.fontawesome.com/f4f33a7145.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
 </head>
 <body>
-    <nav class="navbar nav1" >
-        <div class="container-fluid">  
-    <img src="img/WhatsApp-Image-2022-06-18-at-9.51.10-PM.png" class="img-hyper"> </img>
-    <i style="color:rgb(0, 0, 0);" class='bx bx-menu bx-md'></i>
+
+    <section id="section1"> <!-- Esto es el menu inicial donde decidimos registrarnos o ingresar con cuenta -->
+        <div>
+            <img style=" position: absolute;width: 300px;/* height: 161px; */left: 60px;top: 90px;" src="assets/img/Logo-bg.png">
+        </div>
+
+       
+
         
-        <button class="collapse navbar-collapse ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"></button>
-</div>
-    </nav>
-    <div >
- <span class="texto1"> La seguridad y rapidez, como te lo mereces</span>
- <span class="texto2"> Delivery de calidad a bajo costo</span>
- <button class=" btn boton"> <h2>Ver mas</h2></button>
- <img src="img/zack-dowdy-I7uCd2clVeU-unsplash.jpg" style="height: 844px; width: 390px;"> </img>       
-    </div>
-<div class="traspaso" ></div>
+        <nav>
+            <div>
+                <div id="option-entrar" onclick="selectOption(3)" class="text-entrar-registrar">Entrar</div>
+                <div id="option-registrar" onclick="selectOption(2)" class="text-entrar-registrar">Registrar</div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="section2"> <!-- Pagina donde nos registramos-->
+        <div>
+            <img style="position: absolute; left: 55%; top: 20%" src="assets/img/Vector.png">
+        </div>
+        <div>
+            <div class="text-nombre" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 380px;">Nombre: </div>
+            <div class="text-correo" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 480px;">Correo: </div>
+            <div class="text-telefono" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 580px;">Telefono: </div>
+            <div class="text-contraseña" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 680px;">Contraseña: </div>
+        </div>
+
+
+        
+        <div>
+            <img id="fondo-hyperdelivery" src="assets/img/Fondo Hyper.jpg">
+            
+        <div>
+            <div id="option-menu" onclick="selectOption(1)" class="text-entrar-registrar">Volver</div>
+            <div id="option-ingresar" onclick="selectOption(5)" class="text-entrar-registrar">Registrar</div>
+        </div>
+    </section>
+
+    <section id="section3"> <!-- Pagina donde ingresamos credenciales -->
+        <div>
+            <img style=" position: absolute;
+            width: 300px;
+            /* height: 161px; */
+            left: 60px;
+            top: 250px" src="assets/img/Logo-bg.png">
+        </div>
+        <div>
+            <div class="text-correo" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 500px;">Correo: </div>
+            <div class="text-contraseña" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 600px;">Contraseña: </div>
+        </div>
+        <div>
+            <img id="fondo-hyperdelivery" src="assets/img/Fondo Hyper.jpg">
+            
+        </div>
+            <div>
+                <div id="option-menu" onclick="selectOption(1)" class="text-entrar-registrar">Volver</div>
+                <div id="option-ingresar" onclick="selectOption(4)" class="text-entrar-registrar">Ingresar</div>
+            </div>
+    </section>
+
+    <section id="section4"> <!-- Pagina donde vemos las categorias-->
+
+
+        <div>
+            <div id="fondo-hyperdelivery2">
+
+                <i style=" font-size:35px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class='fa-solid fa-motorcycle'></i> 
+                
+                <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+                <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+
+              
+            
+            </div> 
+        </div>
+
+        <div class="texto-categorias" style="margin-top: 100px;"> <h1>Bienvenido(a) de nuevo</h1> </div>
+
+        <div class="categorias">
+            <div style="margin: inherit;">
+                <img src="assets/img/dainis-graveris-_iDJMMOi3Tc-unsplash.jpg" onclick="selectOption(5)" class="" width="100%" style="border-radius: 25px;">
+            <div class="texto-categorias2"> <h4>Accesorios</h4></div>
+            </div>
+        
+        
+            <div style="margin:inherit">
+                <img src="assets/img/dainis-graveris-_iDJMMOi3Tc-unsplash.jpg" onclick="selectOption(5)" class="" width="100%" style="border-radius: 25px;">
+            <div class="texto-categorias2"> <h4>Artesanias</h4></div>
+            </div>
+        
+        
+            <div style="margin:inherit">
+                <img src="assets/img/dainis-graveris-_iDJMMOi3Tc-unsplash.jpg" onclick="selectOption(5)" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-categorias2"><h4>Belleza</h4> </div>
+            </div>
+            <div style="margin:inherit">
+                <img src="assets/img/dainis-graveris-_iDJMMOi3Tc-unsplash.jpg" onclick="selectOption(5)" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-categorias2"><h4>Cafeteria</h4> </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="section5"> <!-- pagina donde vemos  las empresas de cada categoria-->
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+        <div id="categoria" style="margin-top: 100px;"> <h1> Accesorios</h1></div>
+
+        <div class="categorias">
+            <div style="margin: inherit;">
+                <img onclick="selectOption(6)"  src="assets/img/descarga.png" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Lente mania
+                    <div style="font-size: 11px;">¡la juventud es aqui!</div>
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="margin: inherit;">
+                <img onclick="selectOption(6)" src="assets/img/descarga.png" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Optica
+                    <div style="font-size: 11px;">¡la juventud es aqui!</div>
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: inherit;">
+                <img onclick="selectOption(6)" src="assets/img/descarga.png" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Claries
+                    <div style="font-size: 11px;">¡la juventud es aqui!</div>
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: inherit;">
+                <img onclick="selectOption(6)" src="assets/img/descarga.png" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Claries
+                    <div style="font-size: 11px;">¡la juventud es aqui!</div>
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    
+
+            
+
+
+           
+
+           
+
+
+    </section>
+
+    <section  id="section6"> <!-- Pagina donde vemos una sola empresa con sus productos-->
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+        <div style="margin-top: 100px;" class="banner">
+            <img src="assets/img/5a1ac94af65d84088faf137d.png" width="100%">
+            </div>
+            <div  class="nombre">
+            Clarie's
+            </div> 
+            <div class="informacion">
+                Claire’s es la marca global que celebra la auto-expresión de la juventud a través de divertidas colecciones de bisutería, accesorios y cosméticos.
+            </div>
+
+            <div class="categorias">
+                <div style="margin: inherit;">
+                    <img onclick="selectOption(7)" src="assets/img/62399_1.jpg" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Mini mochila
+                    <div style="font-size: 16px;">L300.00 </div>
+                </div>
+                </div>
+            
+            
+                <div style="margin: inherit;">
+                    <img onclick="selectOption(7)" src="assets/img/sombrero-de-invierno-beanista-aislado-en-fondo-blanco-con-sendero-recorte-160470307.jpg" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Gorro Amarillo
+                    <div style="font-size: 16px;">L210.00 </div>
+                </div>
+                </div>
+            
+            
+                <div style="margin: inherit;">
+                    <img onclick="selectOption(7)" src="assets/img/sombrero-de-invierno-beanista-aislado-en-fondo-blanco-con-sendero-recorte-160470307.jpg" class="" width="100%" style="border-radius: 25px;">
+                <div class="texto-empresas">Gorro Amarillo
+                    <div style="font-size: 16px;">L210.00 </div>
+                </div>
+                </div>
+              
+            </div>
+            
+    </section>
+
+    <section id="section7"> <!-- Pagina donde vemos el productor -->
+        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; "> Estados de orden</h1>
+        
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i  style="color:rgb(255, 255, 255);position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+        <div style="color:#000000;" id="articulo"> Gorro amarillo
+
+            <div class="img-articulo" ">
+                <img src="assets/img/sombrero-de-invierno-beanista-aislado-en-fondo-blanco-con-sendero-recorte-160470307.jpg"  width="100%"  style="border-radius: 25px;">
+            </div>
+            
+            </div>
+            <div class="informacion2"> Gorro de invierno, color amarillo claro con un diseño clasico y moderno
+            <br>
+            * Comodidad de llevar y confortable
+            <br>
+            *Diseño de gorro simple y clasico
+            <br>
+            L150.00
+            
+            </div>
+            <div class="sumador">
+                <i class="fas fa-minus-circle" style="font-size: 2rem; color: #D74B1F;"></i>
+                <button style="width: 150px;" class="btn boton-sumar "> 1</button>
+                <i class="fas fa-plus-circle" style="font-size: 2rem; color: #D74B1F;"></i>
+                <button class=" btn boton-agregar">Agregar</button>
+            </div>
+
+       
+
+        
+    </section>
+
+    <section style="display:none" id="aun por definir"> <!-- Pagina donde vemos el estado de la orden-->
+        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; "> Estados de orden</h1>
+        
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i  style="color:rgb(255, 255, 255);position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+        <div class="container" style=" width: 414px" >
+            <div style="justify-content:center ;" class="row" id="estados"> 
+
+            </div>
+
+           
+
+        </div>
+
+        <div style="display:flex;justify-content:center">
+
+            <div id="" onclick="selectOption(8)" class="text-entrar-registrar" style="display:flex;justify-content:center; background-color: #D74B1F;box-shadow: black 0px 4px 4px;border-radius: 25px;width: 150px;height: auto;left: 135px;top: 750px;">Factura</div>
+
+        </div>
+
+        
+    </section>
+
+
+    <section id="section8"> <!-- Pagina donde vemos la factura de orden-->
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+
+        <div style="height:auto;display: flex; justify-content: center;">
+            <div id="fondo-orden1" style="padding: 25px; margin-bottom: 20px;margin-top: 100px;">
+                <div style="margin-top: 10PX;color:#fff;font-size:50px;display: flex; justify-content: center;">Factura</div>
+                <div style="margin-top: 10PX;color:#fff;font-size:35px;display: flex; justify-content: center;">N° Orden:  </div>
+                <div style="color:#fff;font-size:25px;display: flex; justify-content: center;">lista</div>
+
+                <div style="color:#fff;font-size:15px;display: flex; justify-content: center;height:auto;">
+                    <div>
+                       
+                        <div style="display:flex; justify-content: center;">
+                            
+                            <div style="color: aliceblue;">f</div>
+                            
+                        </div>
+                        
+                    
+                      
+                       
+
+                    </div>
+                    
+
+
+                </div>
+                <div style="display: flex; flex-direction: row;justify-content: space-evenly;">
+
+                    <div >
+                        
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">Factura:</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">Pago:</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">ISV:</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">Comision M:</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">Comision A:</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;">N° Motorista:</div>
+                        
+
+                    </div>
+
+                    <div style="width:30ox ;" >
+                        
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">dfg</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">cvb</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">cvbc</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">cvb</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">c cvc</div>
+                        <div style="margin-top: 15PX;color:#fff;font-size:30px;display: flex; justify-content:flex-end;">fg</div>
+                        
+
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; display:flex;justify-content: center;color: #fff;"><i style="font-size:120px;;" class="fa-solid fa-barcode"></i></div>
+
+                <div style="margin-top: 20px" id="option-ingresar1" onclick="selectOption(4),RemoverEstilo()" class="text-entrar-registrar">Terminar</div>
+
+
+
+
+
+                
+                
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="section9"> <!-- Pagina donde nos movemos de diferentes listados de ordenes, entregadas,tomadas , disponibles, -->
+        <div>
+            <div id="fondo-hyperdelivery2">
+                
+
+                
+                <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+                <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+
+              
+            
+            </div> 
+        </div>
+        <div>
+            <div class="text-bienvenido" style="position: absolute; width: 411px; height: 60px; left: -0px; top: 100px;">Bienvenido(a) de Nuevo</div>
+            <div class="text-ordenesdisponibles" style="position: absolute; width: 411px; height: 60px; left: -0px; top: 150px;">Ordenes Disponibles</div>
+        </div>
+        <div>
+            <div id="option-ordenes" onclick="selectOption(10)" class="text-ordenes"> <h1 style=" display: flex;justify-content:center; margin-top: 20px ;color:#fff;; "> Ordenes Tomadas</h1></div>
+            <div id="option-ordenes2" onclick="selectOption(4)" class="text-ordenes"><h1 style=" display: flex;justify-content:center; margin-top: 20px ;color:#fff;; "> Ordenes disponibles </h1> </div>
+            <div id="option-ordenes3" onclick="selectOption(11)" class="text-ordenes"><h1 style=" display: flex;justify-content:center; margin-top: 20px ;color:#fff;; "> Ordedes entregadas </h1> </div>
+            
+        </div>
+    </section>
+
+
+    <section id="section10"> <!-- Pagina donde vemos ordes tomadas-->
+        <div>
+            <div id="fondo-hyperdelivery2">
+
+                <i style=" font-size:35px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class='fa-solid fa-motorcycle'></i>  
+                <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+                <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+
+              
+            
+            </div> 
+        </div>
+
+
+        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; ">Ordenes tomadas</h1>
+
+        <div style="margin-top: 100px;">
+
+            <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+               <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-plus"></i>
+               <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+            </div>
+        </div>
+        
+                    
+    
+    </section>
+
+    <section id="section11" style="padding-bottom:100px;"> <!-- Pagina donde vemos ordes Entregadas-->
+        <div>
+            <div id="fondo-hyperdelivery2">
+
+                <i style=" font-size:35px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class='fa-solid fa-motorcycle'></i> 
+                <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+                <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+            </div> 
+        </div>
+        <div style="display:flex; justify-content: center;">
+            <div>
+                <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large;display:flex; justify-content: center; ">Ordenes</h1>
+                <h1 style="color: #000;margin: 100;margin-top: 10px;margin-left:10px;;font-size: xxx-large; ">Entregadas</h1>
+            </div>
+        </div>
+
+        
+       
+        <div style="margin-top: 100px;">
+
+            <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+               <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+               <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+            </div>
+            <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+             <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+             <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+             <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+             <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+             <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
+                <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-check"></i>
+                <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
+             </div>
+        </div>
+    </section>
+
+
+    <section id="section0">
+        <div>
+            <div id="fondo-menu"></div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section style="display:none">
+        <nav class="navbar nav1" >
+            <div class="container-fluid">  
+        <img src="img/WhatsApp-Image-2022-06-18-at-9.51.10-PM.png" class="img-hyper"> </img>
+        <i style="color:rgb(0, 0, 0);" class='bx bx-menu bx-md'></i>
+            
+            <button class="collapse navbar-collapse ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"></button>
+        </div>
+        </nav>
+        <div >
+        <span class="texto1"> La seguridad y rapidez, como te lo mereces</span>
+        <span class="texto2"> Delivery de calidad a bajo costo</span>
+        <button class=" btn boton"> <h2>Ver mas</h2></button>
+        <img src="img/zack-dowdy-I7uCd2clVeU-unsplash.jpg" style="height: 844px; width: 390px;"> </img>       
+        </div>
+        <div class="traspaso" ></div>
+    
+    
+    </section>
+    
 
 
 
@@ -34,6 +572,8 @@
  <script src="js/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="js/controlador.js"></script>   
+<script src="assets/js/controlador.js"></script>   
 </body>
 </html>
+
+
