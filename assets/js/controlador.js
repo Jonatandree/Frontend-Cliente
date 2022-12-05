@@ -23,7 +23,7 @@ const selectOption = (option) =>{
     switch (option){
         case option_menus:
             document.getElementById('section0').style.display="block";
-            
+        
         break;
         case option_menu:
             console.log('Visualizar Menu');
