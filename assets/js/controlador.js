@@ -10,6 +10,8 @@ const option_factura = 8;
 const option_listadoOrdenes = 9;
 const option_OrdenesTomadas = 10;
 const option_OrdenesEntregadas = 11;
+const option_listo = 12;
+const option_estados = 13;
 
 
 
