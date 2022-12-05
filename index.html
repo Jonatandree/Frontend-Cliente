@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://kit.fontawesome.com/f4f33a7145.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/47ba5553fa.js" crossorigin="anonymous"></script>
     
     
 </head>
@@ -81,7 +82,7 @@
         <div>
             <div id="fondo-hyperdelivery2">
 
-                <i style=" font-size:35px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class='fa-solid fa-motorcycle'></i> 
+                
                 
                 <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
                 <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
@@ -273,7 +274,7 @@
                 <i class="fas fa-minus-circle" style="font-size: 2rem; color: #D74B1F;"></i>
                 <button style="width: 150px;" class="btn boton-sumar "> 1</button>
                 <i class="fas fa-plus-circle" style="font-size: 2rem; color: #D74B1F;"></i>
-                <button class=" btn boton-agregar">Agregar</button>
+                <button class=" btn boton-agregar" onclick="selectOption(8)" >Agregar</button>
             </div>
 
        
@@ -281,17 +282,39 @@
         
     </section>
 
-    <section style="display:none" id="aun por definir"> <!-- Pagina donde vemos el estado de la orden-->
-        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; "> Estados de orden</h1>
+    <section style="display:none" id="section8"> <!-- Pagina donde vemos el estado de la orden-->
+        <h1 style="margin-top:300px;"></h1>
         
         <div>
             <div id="fondo-hyperdelivery2"></div>
+            <i style=" font-size:30px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class="fa-solid fa-cart-shopping"></i>
             <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
             <i  style="color:rgb(255, 255, 255);position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
         </div>
 
         <div class="container" style=" width: 414px" >
-            <div style="justify-content:center ;" class="row" id="estados"> 
+            <div style="justify-content:center ;margin-left:30px; margin-right:30px;" class="row" id="fondo-estados-orden">
+                <div style= "color: #fff;">
+
+
+                    <h1 style= " display: flex; justify-content:center;margin-top: 30px;" > ¡Ha agregado 3
+                        
+                    </h1>
+                   
+                    <h1 style= " display: flex; justify-content:center" > Unidades! </h1>
+
+                    <i style=" display: flex; justify-content:center ;font-size:30px; color:#fff ;margin-top: 20px; " onclick="selectOption(9)" class="fa-solid fa-cart-shopping"></i>
+
+                    
+
+
+                </div>
+                
+                <div style="display:flex;justify-content:center;width: 20px; height: 10px;">
+
+                    <div id="option-entrar" onclick="selectOption(4)" class="text-entrar-registrar">volver</div>
+                    <div id="option-registrar" onclick="selectOption(2)" class="text-entrar-registrar">Pagar</div>
+                </div>
 
             </div>
 
@@ -299,11 +322,7 @@
 
         </div>
 
-        <div style="display:flex;justify-content:center">
-
-            <div id="" onclick="selectOption(8)" class="text-entrar-registrar" style="display:flex;justify-content:center; background-color: #D74B1F;box-shadow: black 0px 4px 4px;border-radius: 25px;width: 150px;height: auto;left: 135px;top: 750px;">Factura</div>
-
-        </div>
+        
 
         
     </section>
