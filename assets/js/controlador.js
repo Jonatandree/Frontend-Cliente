@@ -41,6 +41,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
           
             
         break;
@@ -59,6 +61,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
         break;
         case option_registrar:
             console.log('Visualizar Registro');
@@ -74,6 +78,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
         break;
             
         case option_ingreso:
@@ -90,6 +96,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
            
         break;
         case option_registro:
@@ -106,6 +114,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
 
           
         break;
@@ -123,6 +133,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
             
         break;
         case option_ordene:
@@ -139,6 +151,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
             
             
         break;
@@ -156,6 +170,9 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
+        
             
             
         break;
@@ -174,6 +191,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="block";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
             
         break;
 
@@ -191,6 +210,8 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="block";
             document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
             
         break;
 
@@ -208,10 +229,53 @@ const selectOption = (option) =>{
             document.getElementById('section9').style.display="none";
             document.getElementById('section10').style.display="none";
             document.getElementById('section11').style.display="block";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="none";
+            
+        break;
+
+        case option_listo:
+            console.log('botones para ordennes');
+            body.style.backgroundColor = color3;
+            document.getElementById('section1').style.display="none";
+            document.getElementById('section2').style.display="none";
+            document.getElementById('section3').style.display="none";
+            document.getElementById('section4').style.display="none";
+            document.getElementById('section5').style.display="none";
+            document.getElementById('section6').style.display="none";
+            document.getElementById('section7').style.display="none";
+            document.getElementById('section8').style.display="none";
+            document.getElementById('section9').style.display="none";
+            document.getElementById('section10').style.display="none";
+            document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="block";
+            document.getElementById('section13').style.display="none";  
+            
+        break;
+
+
+        case option_estados:
+            console.log('botones para ordennes');
+            body.style.backgroundColor = color3;
+            document.getElementById('section1').style.display="none";
+            document.getElementById('section2').style.display="none";
+            document.getElementById('section3').style.display="none";
+            document.getElementById('section4').style.display="none";
+            document.getElementById('section5').style.display="none";
+            document.getElementById('section6').style.display="none";
+            document.getElementById('section7').style.display="none";
+            document.getElementById('section8').style.display="none";
+            document.getElementById('section9').style.display="none";
+            document.getElementById('section10').style.display="none";
+            document.getElementById('section11').style.display="none";
+            document.getElementById('section12').style.display="none";
+            document.getElementById('section13').style.display="block";
             
         break;
         
         
+
+
         default:
         break;
     }
@@ -220,11 +284,11 @@ const selectOption = (option) =>{
 
 var estados = [
     { 
-        estado: "Tomada",
+        estado: "Pendiente",
         signo:"bx bxs-check-circle",
     },
     { 
-        estado: "En Origen",
+        estado: "Tomada",
         signo:"bx bx-target-lock",
     },
     { 
