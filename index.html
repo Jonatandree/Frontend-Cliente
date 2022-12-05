@@ -46,7 +46,7 @@
             
         <div>
             <div id="option-menu" onclick="selectOption(1)" class="text-entrar-registrar">Volver</div>
-            <div id="option-ingresar" onclick="selectOption(5)" class="text-entrar-registrar">Registrar</div>
+            <div id="option-ingresar" onclick="selectOption(3)" class="text-entrar-registrar">Registrar</div>
         </div>
     </section>
 
@@ -426,7 +426,7 @@
             </div>
 
             <div style="display:flex; justify-content: center;;" >
-                <div style="background-color: #D74B1F;box-shadow: rgba(121, 119, 119, 0.103) 0px 4px 4px;border-radius: 25px;;width: auto;height: auto; display: flex; padding:20px;" id="" onclick="selectOption(4)" class="text-entrar-registrar"> Confirmar Orden</div>
+                <div style="background-color: #D74B1F;box-shadow: rgba(121, 119, 119, 0.103) 0px 4px 4px;border-radius: 25px;;width: auto;height: auto; display: flex; padding:20px;" id="" onclick="selectOption(10)" class="text-entrar-registrar"> Confirmar Orden</div>
             </div>
 
         </div>
@@ -438,32 +438,47 @@
     </section>
 
 
-    <section id="section10"> <!-- Pagina donde vemos ordes tomadas-->
+    <section id="section10"> <!-- Pagina donde colocamos el gps-->
+
         <div>
-            <div id="fondo-hyperdelivery2">
-
-                <i style=" font-size:35px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class='fa-solid fa-motorcycle'></i>  
-                <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
-                <i style="color:#fff;position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
-
-              
-            
-            </div> 
-        </div>
-
-
-        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; ">Ordenes tomadas</h1>
-
-        <div style="margin-top: 100px;">
-
-            <div onclick="selectOption(6)" style="background-color: #FF6543;display: flex ; flex-direction: row;box-shadow: rgb(153, 150, 150) 0px 4px 4px;border-radius: 25px;margin-top: 10px;width: 350px;height: 85px;margin-left: auto;margin-right: auto;">
-               <i style=" font-size:35px; color:#fff ; margin-top:20px;margin-left:20px;"class="fa-solid fa-circle-plus"></i>
-               <h1 style="font:icon; color:#fff;font-size:40px; margin-top:20px;margin-left:25px;">N° 34456</h1>
-            </div>
+            <div id="fondo-hyperdelivery2"></div>
+            <i style=" font-size:30px; color:#fff;position: absolute; left: 75%; top: 15px" onclick="selectOption(9)" class="fa-solid fa-cart-shopping"></i>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i  style="color:rgb(255, 255, 255);position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
         </div>
         
-                    
-    
+
+
+        <h1 style="color: #000;margin: 100;margin-top: 100px;margin-left:10px;;font-size: xxx-large; "></h1>
+
+        <div style="justify-content:center ;margin-left:30px; margin-right:30px; background-color: #FF6543;border-radius: 25px; height: 600px;left: 31px;top: 110px;" class="row" id="">
+            <div style= "color: #fff;">
+                
+
+
+                <h1 style= " display: flex; justify-content:center;margin-top: 30px;" > Indique la direccion en el</h1>
+               
+                <h1 style= " display: flex; justify-content:center" >mapa</h1>
+
+
+                <div style="background-color:#fff; height: 300px; height: 300px; margin-top: 30px; ">
+
+
+
+                </div>
+
+            
+
+            </div>
+
+
+
+            <div style="display:flex; justify-content: center;;" >
+                <div style="background-color: #D74B1F;box-shadow: rgba(121, 119, 119, 0.103) 0px 4px 4px;border-radius: 25px;;width:auto;height:80px; display: flex; padding-left: 10px; padding-right: 10px;" id="" onclick="selectOption(10)" class="text-entrar-registrar"> Hecho </div>
+            </div>
+
+        </div>
+        
     </section>
 
     <section id="section11" style="padding-bottom:100px;"> <!-- Pagina donde vemos ordes Entregadas-->
