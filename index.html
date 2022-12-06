@@ -16,6 +16,96 @@
 </head>
 <body style="background-color: #E5E5E5;">
 
+    <section id ="section01" >
+        <div>
+            <div id="fondo-hyperdelivery2"></div>
+            <img style=" border-radius: 1000px; position: absolute; width: 60px; height: 60px; left: 6px; top: 6px;" src="assets/img/Logo-bg2.png">
+            <i  style="color:rgb(0, 0, 0);position: absolute; left: 88%; top: 15px" onclick="selectOption(1)" class='bx bx-menu bx-md'></i> 
+        </div>
+
+
+
+        <div >
+        <span class="texto1"> La seguridad y rapidez, como te lo mereces</span>
+        
+        <button class=" btn boton" onclick="selectOption(14)"> <h2>Ver mas</h2></button>
+        <img src="assets/img/zack-dowdy-I7uCd2clVeU-unsplash.jpg" style="height: 800px; width: 414px;"> </img>       
+        </div>
+        <div class="traspaso"  >
+            <span class="texto2"> Delivery de calidad a bajo costo</span>
+        </div>
+    
+    
+    </section>
+
+    <section id ="section00">
+        <div style="background-color: #D74B1F; height: 120px;">
+            
+        </div>
+        <div style="background-color: #000000; height: 2px;"></div>
+
+        <div style="background-color: #FF6543; height: 100px; display: flex; flex-direction: row;">
+            <div style="width:207px; display: flex; justify-content: center; align-items: center;"> <div class="" style="font-size: 64px;color: #FFFFFF;"> MENU</div> </div>
+            <div style="width:207px;display: flex; justify-content: center; align-items: center;"><button onclick="selectOption(1)" class=" btn boto  "> <h2>Ingr/regis</h2></button></div>
+            
+            
+        </div>
+        <div style="background-color: #000000; height: 2px;"></div>
+
+        <div style="display: flex; justify-content: center; align-items: center;"> <div class="" style="font-size: 64px;color: #FFFFFF;">Principios</div> </div>
+
+
+
+        <div style=" height: auto; display: flex; flex-direction: row; justify-content:space-evenly;">
+            <div style="display:flex ; flex-direction: column; height: auto;width:150px;">
+                <div style="display:flex ; justify-content: center; font-size: 25px;"> compromiso</div>
+                <div style="display:flex ; justify-content: center; background-color: #FF6543; height: 130px; align-items: center; color: #FFFFFF; font-size:100px;"><i class='bx bxs-donate-blood'></i></i></div>
+
+            </div>
+
+
+            <div style="display:flex ; flex-direction: column; width:150px;">
+                <div style="display:flex ; justify-content: center;font-size: 25px;"> Integridad</div>
+                <div style="display:flex ; justify-content: center; background-color: #FF6543; height: 130px; align-items: center; color: #FFFFFF; font-size:100px;"><i class='bx bx-shield-quarter'></i></i></i></div>
+
+
+            </div>
+
+
+            
+        
+        </div>
+
+        <div style=" height: auto; display: flex; flex-direction: row; justify-content:space-evenly;margin-top: 30px;">
+            <div style="display:flex ; flex-direction: column; height:auto; width:150px;">
+                <div style="display:flex ; justify-content: center; font-size: 25px;">Puntualidad</div>
+                <div style="display:flex ; justify-content: center; background-color: #FF6543; height: 130px; align-items: center; color: #FFFFFF; font-size:100px;"><i class='bx bxs-map-pin'></i></i></div>
+
+            </div>
+
+
+            <div style="display:flex ; flex-direction: column;width:150px;">
+                <div style="display:flex ; justify-content: center;font-size: 25px;"> Etica</div>
+                <div style="display:flex ; justify-content: center; background-color: #FF6543; height: 130px; align-items: center; color: #FFFFFF; font-size:100px;"><i class='bx bx-news'></i></div>
+
+
+            </div>
+
+
+            
+        
+        </div>
+       
+
+        
+
+
+
+        
+    
+    
+    </section>
+
     <section id="section1"> <!-- Esto es el menu inicial donde decidimos registrarnos o ingresar con cuenta -->
         <div>
             <img style=" position: absolute;width: 300px;/* height: 161px; */left: 60px;top: 90px;" src="assets/img/Logo-bg.png">
@@ -32,11 +122,33 @@
         <div>
             <img style="position: absolute; left: 55%; top: 20%" src="assets/img/Vector.png">
         </div>
-        <div>
-            <div class="text-nombre" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 380px;">Nombre: </div>
-            <div class="text-correo" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 480px;">Correo: </div>
-            <div class="text-telefono" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 580px;">Telefono: </div>
-            <div class="text-contraseña" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 680px;">Contraseña: </div>
+        <div style="margin-left: 20px; margin-top: 300px;">
+            
+            <div>
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Nombre:*
+                    <input type="text" placeholder="junior Garcia" style="width:330px;"  > 
+                </div>
+            </div>
+            <div>
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Correo:*
+                    <input type="email" placeholder="jgarcia@gmail.com" style="width:330px;"  > 
+                </div>
+            </div>
+            <div>
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Telefono: *
+                    <input type="number" placeholder="00000000" style="width:330px;"  > 
+                </div>
+            </div>
+            <div>
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Contraseña:*
+                    <input type="password" placeholder="password" style="width:330px;"  > 
+                </div>
+            </div>
+            
         </div>
 
 
@@ -58,9 +170,22 @@
             left: 60px;
             top: 250px" src="assets/img/Logo-bg.png">
         </div>
-        <div>
-            <div class="text-correo" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 500px;">Correo: </div>
-            <div class="text-contraseña" style="position: absolute; width: 124px; height: 42px; left: 30px; top: 600px;">Contraseña: </div>
+        <div style="margin-left: 20px; margin-top: 500px;">
+            
+            
+            <div>
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Correo:*
+                    <input type="email" placeholder="jgarcia@gmail.com" style="width:330px;"  > 
+                </div>
+            </div>
+            
+                <div style="color:#000; font-size:20px; margin-bottom: 30px;">
+                    Contraseña:*
+                    <input type="password" placeholder="password" style="width:330px;"  > 
+                </div>
+            </div>
+            
         </div>
         <div>
             <img id="fondo-hyperdelivery" src="assets/img/Fondo Hyper.jpg">

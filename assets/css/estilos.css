@@ -30,11 +30,6 @@ color: #FFFFFF;
 
 }
 .texto2{
-    position: absolute;
-    width: 269px;
-    height: 74px;
-    left: 60px;
-    top: 475px;
     
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
@@ -61,6 +56,16 @@ color: #fff;
 background: #D74B1F;
 border-radius: 25px;
 }
+.boto{
+    
+width: 160px;
+height: 59px;
+left: 114px;
+top: 550px;
+color: #fff;
+background: #D74B1F;
+border-radius: 25px;
+}
 .boton :focus{
     position: absolute;
     width: 160px;
@@ -73,7 +78,9 @@ border-radius: 25px;
 }
 .traspaso{
     background-color: #D74B1F ;
-    height: 4rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
 }
 /* Estilos de landing page ^ */
 #fondo{
@@ -259,7 +266,7 @@ nav{
     top: 582px;
 }
 
-#section0, #section2, #section3, #section4, #section5, #section6, #section7,#section8,#section9,#section10,#section11,#section12,#section13{
+#section00,#section1,#section2, #section3, #section4, #section5, #section6, #section7,#section8,#section9,#section10,#section11,#section12,#section13{
     display: none;  
 }
 
