@@ -476,3 +476,21 @@ nav{
     left: 31px;
     top: 110px;
 }
+
+
+/*Estilos para el mapa*/
+#map{
+    width: 90%;
+    height: 480px;
+    box-shadow: 5px 5px 5px #888;
+      border-radius: 6px;
+    margin:1rem;
+}
+
+.traer{ margin: 5px;
+background-color: #F57053;
+    height:37rem;
+    border-radius:6px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

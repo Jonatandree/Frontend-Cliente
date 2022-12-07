@@ -379,7 +379,7 @@ const RenderizarCategorias = ()=>{
         document.getElementById('categoriasInicio').innerHTML +=
         `
         <div style="margin: inherit;">
-        <img src=${categoria.imagenCategoria} onclick="renderizarEmpresas(${categoria._id})" class="" width="100%" style="border-radius: 25px;">
+        <img src=${categoria.imagenCategoria} onclick="selectOption(5)" class="" width="100%" style="border-radius: 25px;">
     <div class="texto-categorias2"> <h4>${categoria.nombreCategorias} </h4></div>
     </div>     `;
         
@@ -395,7 +395,7 @@ function renderizarEmpresas(id){
 
 }
 function renderizarProductos(nombreProducto){
-    
+
 }
 
 /*/
