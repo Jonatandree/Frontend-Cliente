@@ -361,6 +361,59 @@ const selectOption = (option) =>{
 }
 
 
+let categoriasBackend;
+const cargarCategorias= async () => {
+    const respuesta = await fetch("http://localhost:3002/categorias", {
+    method: "GET",
+
+    });
+categoriasBackend =await respuesta.json();
+console.log("categorias alero", categoriasBackend);
+
+};
+
+
+const RenderizarCategorias = ()=>{
+    document.getElementById('categoriasInicio').innerHTML='';
+    categoriasBackend.forEach(categoria =>{
+        document.getElementById('categoriasInicio').innerHTML +=
+        `
+        <div style="margin: inherit;">
+        <img src=${categoria.imagenCategoria} onclick="renderizarEmpresas(${categoria._id})" class="" width="100%" style="border-radius: 25px;">
+    <div class="texto-categorias2"> <h4>${categoria.nombreCategorias} </h4></div>
+    </div>     `;
+        
+        
+    } )    
+};
+cargarCategorias().then(()=> {
+    RenderizarCategorias();
+});
+
+function renderizarEmpresas(id){
+
+
+}
+function renderizarProductos(nombreProducto){
+    
+}
+
+/*/
+let empresasBackend;
+const cargarEmpresas = async ()=>{
+    const respuesta = await fetch(`http://localhost:3002/categorias/${categoriasBackend._id}`, {
+        method: "GET",
+    
+        });
+    categoriasBackend =await respuesta.json();
+    console.log("categorias alero", cBa);
+} */
+
+
+
+
+
+
 var estados = [
     { 
         estado: "Pendiente", 
@@ -451,3 +504,6 @@ function GenerarEstadosDeRegistro(){
 }
 
 GenerarEstadosDeRegistro();
+
+
+
